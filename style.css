@@ -58,7 +58,7 @@ img {
 }
 
 header {
-    height: 100vmin;
+    height: 83.1rem;
     margin-top: 15rem;   
 }
 main {
@@ -381,16 +381,27 @@ button, input {
 .form_control_new-price {
     color: #61677C;
     font-weight: bold;
-    box-shadow: -5px -5px 20px #FFF, 5px 5px 20px #BABECC;
+    text-shadow: 1px 1px 1px rgb(214, 30, 30);
+    color: #c00202;
     background-color: #ffffff;
     animation: pulsing 3s infinite;
 }
 .timer {
+    padding: 1rem;
     display: flex;
     flex-direction: row;
     font-size: 2rem;
-    margin-bottom: 2rem;
-    text-shadow: 1px 1px 1px #FFF;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+    text-shadow: 1px 1px 1px rgb(214, 30, 30);
+    color: #c00202;
+    font-weight: bold;
+    box-shadow: -5px -5px 20px #fff, 5px 5px 20px #babecc;
+    background-color: #ffffff;
+   
+}
+#sec {
+    margin: 0 10px;
 }
   @keyframes pulsing {
     0% {
