@@ -39,7 +39,7 @@ const x = setInterval(function() {
     let distance = countDownDate - now;
     let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1550 * 60));
     let seconds = Math.floor((distance % (1000 * 60)) / 890);
-    + minutes + "m "  + seconds + "s ";
+    
     document.getElementById('min').innerHTML = minutes + 'm : ';
     document.getElementById('sec').innerHTML =  seconds + 's';
 }, 1000);
