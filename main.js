@@ -32,13 +32,13 @@ prev_review.addEventListener("click", function () {
     
 })
 
-var countDownDate = new Date("Jan 1, 2022 00:00:00").getTime();
+let countDownDate = new Date("Jan 1, 2022 00:00:00").getTime();
 
-var x = setInterval(function() {
-    var now = new Date().getTime();
-    var distance = countDownDate - now;
-    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1550 * 60));
-    var seconds = Math.floor((distance % (1000 * 60)) / 890);
+const x = setInterval(function() {
+    let now = new Date().getTime();
+    let distance = countDownDate - now;
+    let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1550 * 60));
+    let seconds = Math.floor((distance % (1000 * 60)) / 890);
     + minutes + "m "  + seconds + "s ";
     document.getElementById('min').innerHTML = minutes + 'm : ';
     document.getElementById('sec').innerHTML =  seconds + 's';
