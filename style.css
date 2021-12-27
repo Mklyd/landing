@@ -12,9 +12,7 @@ body {
     font-size: 16px;
     background-color: rgb(255, 255, 255);
 }
-#container {
-    margin-top: 2rem;   
-}
+
 .card {
     background: rgb(36,134,119);
     background: linear-gradient(90deg, rgb(32 97 91) 2%, rgb(42 106 103) 21%, rgb(91 155 151) 85%);
@@ -70,7 +68,7 @@ main {
 
 #myVideo {
     width: 100%;
-    
+    height: 90rem;
     object-fit: cover;
     position: absolute;
     left: 0;
@@ -85,12 +83,13 @@ main {
 }
 .header_promo_firstBlock {
     margin: 0;
-    
+    display: flex;
+    align-items: center;
 }
 .header_promo_firstBlock_title {
     text-align: center;
     padding: 1.5rem;
-    width: 163%;
+    width: 100%;
 }
 .header_promo_firstBlock_img {
     margin: 0;
@@ -103,7 +102,7 @@ main {
     flex-direction: column;
     margin-top: 7%;
     line-height: 5rem;
-
+    margin-left: 8rem;
 }
 .header_promo_secondBlock_list {
     line-height: 5rem;
@@ -418,12 +417,52 @@ button, input {
       transform: scale(0.5, 0.5);
     }
   }
-@media (max-width: 758px) { 
+@media (max-width: 1140px) { 
+    body {
+        font-size: 1.5rem;
+    }
+    header {
+        margin: 0;
+        height: 58.2rem;
+    }
 
+    #myVideo {
+        display: none;
+    }
+    #header_promo {
+        display: flex; 
+    }
+    .header_promo_firstBlock_img img {
+        margin: 12% 0 1% 2%;
+    }
+    .next_review {
+      
+        left: 55rem;
+    }
 }
 
 @media screen and (max-width: 480px){
-    
+    body {
+        font-size: 1.5rem;
+    }
+    header {
+        margin: 0;
+        height: 100vmax;
+    }
+    #myVidoe {
+        display: none;
+    }
+    #header_promo {
+        display: flex;
+        align-items: baseline;
+        flex-direction: column;
+    }
+    .header_promo_firstBlock_img img {
+        margin: 12% 0 1% 2%;
+    }
+    main {
+        margin-top: 47.9rem;
+    }
 }
 
 
